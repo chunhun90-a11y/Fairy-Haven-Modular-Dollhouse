@@ -1,0 +1,6 @@
+{
+  "name": "Fairy Haven: Modular Dollhouse Sandbox",
+  "description": "A cozy 2D cross-section dollhouse builder and fairy life sandbox combining modular room construction with interactive characters, magical pets, and tactile furniture customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

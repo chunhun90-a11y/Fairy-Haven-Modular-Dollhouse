@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CBEAE6" />
+      <stop offset="55%" stop-color="#FCE1EB" />
+      <stop offset="100%" stop-color="#DCEAA9" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Square -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)" />
+  <!-- Rolling Hills -->
+  <path d="M 0 380 Q 140 320 280 370 Q 400 320 512 370 L 512 512 L 0 512 Z" fill="#A8D08D" />
+  <!-- Dollhouse Body -->
+  <rect x="96" y="168" width="320" height="256" rx="12" fill="#FFF7ED" stroke="#382519" stroke-width="14" />
+  <!-- Top Left Star Bedroom -->
+  <rect x="110" y="180" width="140" height="114" fill="#D5B9EE" stroke="#382519" stroke-width="8" />
+  <circle cx="180" cy="226" r="24" fill="#CBEAE6" stroke="#382519" stroke-width="8" />
+  <line x1="180" y1="202" x2="180" y2="250" stroke="#382519" stroke-width="6" />
+  <line x1="156" y1="226" x2="204" y2="226" stroke="#382519" stroke-width="6" />
+  <!-- Top Right Mint Kitchen -->
+  <rect x="262" y="180" width="140" height="114" fill="#A6E3D5" stroke="#382519" stroke-width="8" />
+  <!-- Bottom Left Floral Garden -->
+  <rect x="110" y="302" width="140" height="110" fill="#FCE1D8" stroke="#382519" stroke-width="8" />
+  <rect x="114" y="384" width="132" height="24" fill="#8CC665" />
+  <!-- Bottom Right Wood Studio -->
+  <rect x="262" y="302" width="140" height="110" fill="#F4E3CD" stroke="#382519" stroke-width="8" />
+  <!-- Wooden Floor & Center Beams -->
+  <rect x="96" y="290" width="320" height="16" fill="#B47B4E" stroke="#382519" stroke-width="8" />
+  <rect x="248" y="168" width="16" height="256" fill="#B47B4E" stroke="#382519" stroke-width="8" />
+  <rect x="86" y="414" width="340" height="20" rx="6" fill="#94603B" stroke="#382519" stroke-width="10" />
+  <!-- Pitched Wooden Gable Roof -->
+  <polygon points="64,176 256,68 448,176 432,198 256,98 80,198" fill="#94603B" stroke="#382519" stroke-width="12" stroke-linejoin="round" />
+  <!-- Sparkle Star at Peak -->
+  <polygon points="256,112 265,134 288,136 270,150 276,172 256,160 236,172 242,150 224,136 247,134" fill="#F8DC78" stroke="#382519" stroke-width="6" stroke-linejoin="round" />
+</svg>

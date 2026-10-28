@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    overflow: hidden;
+    background-color: #fdf3eb;
+    color: #2b2118;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  }
+}
+
+@keyframes roomPopIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-28px) scale(0.84, 1.12);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(4px) scale(1.04, 0.96);
+  }
+  85% {
+    transform: translateY(-2px) scale(0.99, 1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+@keyframes fairyFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.01, 0.99);
+  }
+}
+
+@keyframes dangleSwing {
+  0%, 100% {
+    transform: rotate(-7deg) scale(0.96, 1.05);
+  }
+  50% {
+    transform: rotate(7deg) scale(1.03, 0.97);
+  }
+}
+
+@keyframes zzzFloat {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 6px) scale(0.65);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(12px, -22px) scale(1.15);
+  }
+}
+
+@keyframes sparkleBurst {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx, 0px), var(--ty, -24px)) scale(1.25);
+  }
+}
+
+.animate-room-pop {
+  animation: roomPopIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-fairy-idle {
+  animation: fairyFloat 2.4s ease-in-out infinite;
+}
+
+.animate-dangle {
+  animation: dangleSwing 0.48s ease-in-out infinite;
+  transform-origin: 50% 18%;
+}
+
+.animate-zzz-1 {
+  animation: zzzFloat 2.2s ease-out infinite;
+}
+
+.animate-zzz-2 {
+  animation: zzzFloat 2.2s ease-out 0.75s infinite;
+}
+
+.animate-zzz-3 {
+  animation: zzzFloat 2.2s ease-out 1.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-room-pop,
+  .animate-fairy-idle,
+  .animate-dangle,
+  .animate-zzz-1,
+  .animate-zzz-2,
+  .animate-zzz-3 {
+    animation: none !important;
+  }
+}
